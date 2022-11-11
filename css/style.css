@@ -179,7 +179,7 @@ input[type="submit"]:hover {
 .hebergements {
     display: flex;
     justify-content: space-between;
-
+    margin-bottom: 5%;
 }
 
 .noshotels {
@@ -318,6 +318,16 @@ aside {
 
 .descriptionhotelpopulaire {
     width: 55%;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+.descriptionhotelpopulaire i {
+    margin-top: 30px;
+}
+
+.descriptionhotelpopulaire p {
+    margin-bottom: 10px;
 }
 
 /* LES ACTIVITES */
@@ -325,6 +335,7 @@ aside {
 .Nosactivites {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 5%;
 }
 
 .NomActivite {
@@ -378,4 +389,38 @@ aside {
     width: 100%;
     object-fit: cover;
     /* object-position: bottom */
+}
+
+.activitesmedium:hover{
+    scale: 1.05;
+}
+.activiteslong:hover{
+    scale: 1.05;
+}
+.activitescourt:hover{
+    scale: 1.05;
+}
+
+
+/* PIED DE PAGE */
+
+footer{
+    background-color: #F2F2F2;
+    padding: 10px;
+    display: flex;
+    gap: 15%;
+}
+ul{
+    list-style-type: none;
+}
+footer li{
+    margin-bottom: 15px;
+}
+footer h3{
+    margin-left: 40px;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
 }
