@@ -1,4 +1,4 @@
-GENERAL
+/* GENERAL */
 
 * {
     box-sizing: content-box;
@@ -97,16 +97,13 @@ input[type="submit"] {
     cursor: pointer;
 }
 
-input[type="submit"]:hover {
-    scale: 0.97;
-}
-
 /* FILTRAGE */
 
 .filtre {
     display: flex;
+    flex-direction: column;
     font-weight: bold;
-    align-items: center;
+    align-items:flex-start;
     margin-bottom: 20px;
 }
 
@@ -122,12 +119,7 @@ input[type="submit"]:hover {
 
 .categorie {
     display: flex;
-    margin-right: 20px;
-
-}
-
-.categorie:hover {
-    scale: 1.05;
+    margin-right: 6px;
 
 }
 
@@ -181,20 +173,14 @@ input[type="submit"]:hover {
 
 .hebergements {
     display: flex;
+    flex-direction: column-reverse;
     justify-content: space-between;
     margin-bottom: 5%;
 }
 
-.noshotels {
-    background-color: #F2F2F2;
-    border-radius: 20px;
-    width: 70%;
-
-}
-
 .noshotels h2 {
     margin-top: 40px;
-    margin-left: 40px;
+ 
 }
 
 .noshotels h3 {
@@ -206,8 +192,7 @@ input[type="submit"]:hover {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin-left: 10px;
-    margin-right: 10px;
+    
 
 }
 
@@ -216,8 +201,8 @@ input[type="submit"]:hover {
     padding: 5px;
     border-radius: 20px;
     margin-bottom: 30px;
-    width: 28%;
-
+    width: 40%;
+    box-shadow: 3px 3px 3px 3px #F2F2F2;
 }
 
 .hotel a {
@@ -231,14 +216,10 @@ input[type="submit"]:hover {
     height: 120px;
     width: 100%;
     object-fit: cover;
-    /* object-position: bottom */
+    
 
 }
 
-.hotel:hover {
-    scale: 1.05;
-
-}
 
 .NomHotel {
     font-weight: bold;
@@ -271,16 +252,15 @@ input[type="submit"]:hover {
 
 aside {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     background-color: #F2F2F2;
-    width: 40%;
-    margin-left: 40px;
+    flex-wrap: wrap;
     border-radius: 20px;
 }
 
 .bandepopulaires {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     width: 85%;
     margin: auto;
@@ -290,6 +270,7 @@ aside {
 
 .bandepopulaires h2 {
     margin: 0;
+    margin-right: 20px;
 }
 
 .bandepopulaires i {
@@ -309,17 +290,13 @@ aside {
     padding: 5px;
     border-radius: 20px;
     margin: auto;
-    width: 85%;
+    width: 90%;
     margin-bottom: 30px;
 }
 
 .hotelpopulaire a {
     display: flex;
     width: 100%;
-}
-
-.hotelpopulaire:hover {
-    scale: 1.05;
 }
 
 .hotelpopulaire img {
@@ -376,8 +353,7 @@ aside {
     height: 350px;
     width: 100%;
     object-fit: cover;
-    /* object-position: bottom */
-}
+   }
 
 .activite2 {
     width: 23%;
@@ -397,7 +373,7 @@ aside {
     height: 150px;
     width: 100%;
     object-fit: cover;
-    /* object-position: bottom */
+    
 }
 
 .activitescourt {
@@ -411,21 +387,8 @@ aside {
     height: 100px;
     width: 100%;
     object-fit: cover;
-    /* object-position: bottom */
+    
 }
-
-.activitesmedium:hover {
-    scale: 1.05;
-}
-
-.activiteslong:hover {
-    scale: 1.05;
-}
-
-.activitescourt:hover {
-    scale: 1.05;
-}
-
 
 /* PIED DE PAGE */
 
@@ -433,7 +396,7 @@ footer {
     background-color: #F2F2F2;
     padding: 10px;
     display: flex;
-    gap: 15%;
+    gap: 5%;
 }
 
 ul {
