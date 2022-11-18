@@ -12,7 +12,9 @@
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (min-width: 992px)"href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile.css" />
+    <link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 992px)" href="css/tablette.css" />
 
     <title>Booki</title>
 
@@ -33,7 +35,7 @@
 
     <main>
         <!-- Champ de recherche -->
-
+<div class="champrecherche">
         <h1>Trouvez votre hébergement pour des vacances de rêve </h1>
         <p> En plein centre ville ou en pleine nature</p>
 
@@ -42,7 +44,7 @@
             <input type="search" name="recherche" placeholder="Marseille, France" />
             <input type="submit" value="Rechercher">
         </form>
-
+ </div>
         <!-- filtres -->
 
         <section class="filtre">
