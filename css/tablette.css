@@ -87,7 +87,7 @@ input[type="search"]::placeholder {
     color: black;
 }
 
-input[type="submit"] {
+form button {
     border: none;
     background-color: #0065FC;
     color: white;
@@ -95,6 +95,11 @@ input[type="submit"] {
     padding: 0px 20px 0px 20px;
     border-radius: 0px 20px 20px 0px;
     cursor: pointer;
+}
+form button::before {
+    font-family: raleway;
+    
+    content: "Rechercher";
 }
 
 /* FILTRAGE */
@@ -327,11 +332,13 @@ aside {
 .Nosactivites {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 5%;
+    
+    flex-wrap: wrap;
 }
 
 .Nosactivites a {
     display: flex;
+    
     flex-direction: column;
 }
 
@@ -344,7 +351,9 @@ aside {
 .activiteslong {
     border-radius: 20px;
     box-shadow: 3px 3px 3px 3px #F2F2F2;
-    width: 23%;
+    width: 45%;
+    margin-bottom: 50px;
+   
 }
 
 .activiteslong img {
@@ -356,10 +365,11 @@ aside {
    }
 
 .activite2 {
-    width: 23%;
+    width: 45%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-bottom: 50px;
 }
 
 .activitesmedium {
@@ -374,11 +384,13 @@ aside {
     width: 100%;
     object-fit: cover;
     
+    
 }
 
 .activitescourt {
     box-shadow: 3px 3px 3px 3px #F2F2F2;
     border-radius: 20px;
+
 }
 
 .activitescourt img {

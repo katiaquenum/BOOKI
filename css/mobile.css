@@ -37,15 +37,15 @@ header nav ul {
 
 }
 
-header nav a {
-    padding-left: 50px;
-    padding-right: 50px;
+header nav li {
     padding-bottom: 10px;
+    width: 50%;
+    text-align: center;
     border-bottom: #F2F2F2 3px solid;
 
 }
 
-header nav a:hover {
+header nav li:hover {
     color: #0065FC;
     padding-bottom: 10px;
     border-bottom: #0065FC 3px solid;
@@ -97,7 +97,7 @@ input[type="search"]::placeholder {
     color: black;
 }
 
-input[type="submit"] {
+form button {
     border: none;
     background-color: #0065FC;
     color: white;
@@ -105,13 +105,13 @@ input[type="submit"] {
     padding: 0px 20px 0px 20px;
     border-radius: 0px 20px 20px 0px;
     cursor: pointer;
-
+   
 }
 
-input[type="submit"] ::before {
+form button::before {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
-    content: "\f007";
+    content: "\f002";
 }
 
 /* FILTRAGE */
